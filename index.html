@@ -1,0 +1,337 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poovarasan | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111827;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 75px 10%;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            box-shadow: 0 0 30px #38bdf833;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            color: #38bdf8;
+            font-size: 32px;
+            margin-bottom: 22px;
+        }
+
+        .about p,
+        .goals p {
+            max-width: 750px;
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 15px 24px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            border-color: #38bdf8;
+            transform: translateY(-3px);
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            max-width: 600px;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .project p {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                justify-content: center;
+                text-align: center;
+                padding-top: 55px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .profile-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Poovarasan.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#goals">Goals</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Poovarasan</span></h1>
+
+            <p>
+                First-year Computer Science Engineering student
+                exploring coding, web development, and technology.
+                Learning something new every day.
+            </p>
+
+            <a href="#about" class="btn">Explore My Portfolio</a>
+        </div>
+
+        <img
+            class="profile-img"
+            src="431 Poovarasan.jpg.jpeg"
+            alt="Poovarasan's profile photo"
+        >
+
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I'm a Computer Science Engineering student interested
+            in programming, technology, and problem-solving.
+            I'm building my technical foundation and exploring
+            web development through practical projects.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python - Learning</div>
+            <div class="skill">C++ - Learning</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <section class="goals" id="goals">
+        <h2 class="section-title">My Goals</h2>
+
+        <p>
+            My goal is to become a skilled software developer,
+            build useful real-world projects, improve my coding
+            skills, and create a strong career in technology.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+                My first web development project, built using
+                HTML and CSS to introduce myself and showcase
+                my skills and learning journey.
+            </p>
+
+            <button class="btn" onclick="showMessage()">
+                Say Hello 👋
+            </button>
+        </div>
+    </section>
+
+    
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>Interested in connecting and learning together?</p>
+
+    <a class="btn" href="mailto:bpoovarasan30@gmail.com">
+        Email Me
+    </a>
+
+    <a class="btn"
+       href="https://github.com/Poovarasan2008"
+       target="_blank"
+       rel="noopener noreferrer">
+        GitHub
+    </a>
+
+    <a class="btn"
+       href="https://www.linkedin.com/in/Poovarasan B/"
+       target="_blank"
+       rel="noopener noreferrer">
+        LinkedIn
+    </a>
+</section>
+
+
+    <footer>
+        <p>© 2026 Poovarasan | Built with HTML & CSS</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Thanks for visiting my portfolio! 😊");
+        }
+    </script>
+
+</body>
+</html>
