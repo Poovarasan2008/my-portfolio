@@ -1,8 +1,7 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,10 +37,15 @@
             color: #38bdf8;
         }
 
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 16px;
         }
 
         nav a:hover {
@@ -50,6 +54,7 @@
 
         section {
             padding: 75px 10%;
+            scroll-margin-top: 90px;
         }
 
         .hero {
@@ -100,6 +105,7 @@
             font-weight: bold;
             cursor: pointer;
             transition: 0.3s;
+            margin: 5px 5px 5px 0;
         }
 
         .btn:hover {
@@ -145,6 +151,7 @@
             border-radius: 12px;
             border: 1px solid #334155;
             max-width: 600px;
+            margin-bottom: 25px;
         }
 
         .project h3 {
@@ -155,6 +162,36 @@
         .project p {
             color: #cbd5e1;
             margin-bottom: 20px;
+        }
+
+        /* Certificates Section */
+
+        .certificate-card {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .certificate-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .certificate-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .certificate-card p {
+            color: #cbd5e1;
+            margin: 8px 0;
         }
 
         .contact p {
@@ -176,14 +213,8 @@
             }
 
             nav {
-                display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 gap: 12px;
-            }
-
-            nav a {
-                margin: 0;
             }
 
             .hero {
@@ -205,11 +236,17 @@
             section {
                 padding: 55px 7%;
             }
+
+            .certificate-card {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 
 <body>
+
+    <!-- Navigation -->
 
     <header>
         <h2>Poovarasan.</h2>
@@ -220,9 +257,12 @@
             <a href="#skills">Skills</a>
             <a href="#goals">Goals</a>
             <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <!-- Home Section -->
 
     <section class="hero" id="home">
 
@@ -235,16 +275,20 @@
                 Learning something new every day.
             </p>
 
-            <a href="#about" class="btn">Explore My Portfolio</a>
+            <a href="#about" class="btn">
+                Explore My Portfolio
+            </a>
         </div>
 
         <img
-    class="profile-img"
-    src="Professional LinkedIn Portrait.png"
-    alt="Poovarasan's professional profile photo"
->
+            class="profile-img"
+            src="Professional LinkedIn Portrait.png"
+            alt="Poovarasan's professional profile photo"
+        >
 
     </section>
+
+    <!-- About Section -->
 
     <section class="about" id="about">
         <h2 class="section-title">About Me</h2>
@@ -256,6 +300,8 @@
             web development through practical projects.
         </p>
     </section>
+
+    <!-- Skills Section -->
 
     <section id="skills">
         <h2 class="section-title">My Skills</h2>
@@ -269,6 +315,8 @@
         </div>
     </section>
 
+    <!-- Goals Section -->
+
     <section class="goals" id="goals">
         <h2 class="section-title">My Goals</h2>
 
@@ -279,68 +327,108 @@
         </p>
     </section>
 
-   
-<section id="projects">
-    <h2 class="section-title">My Projects</h2>
+    <!-- Projects Section -->
 
-    <div class="project">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-            My first web development project, built using
-            HTML and CSS to introduce myself and showcase
-            my skills and learning journey.
-        </p>
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
 
-        <button class="btn" onclick="showMessage()">
-            Say Hello 👋
-        </button>
-    </div>
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
 
-    <div class="project">
-        <h3>FairShift Pulse</h3>
-        <p>
-            An ACM hackathon project focused on SDG 8:
-            Decent Work and Economic Growth. Designed to
-            support workplace fairness, worker welfare,
-            and employer oversight.
-        </p>
+            <p>
+                My first web development project, built using
+                HTML and CSS to introduce myself and showcase
+                my skills and learning journey.
+            </p>
 
-        <a class="btn"
-           href="https://fairshift-project-2026war-tjie.vercel.app/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Live Demo ↗
+            <button class="btn" onclick="showMessage()">
+                Say Hello 👋
+            </button>
+        </div>
+
+        <div class="project">
+            <h3>FairShift Pulse</h3>
+
+            <p>
+                An ACM hackathon project focused on SDG 8:
+                Decent Work and Economic Growth. Designed to
+                support workplace fairness, worker welfare,
+                and employer oversight.
+            </p>
+
+            <a
+                class="btn"
+                href="https://fairshift-project-2026war-tjie.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Live Demo ↗
+            </a>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+
+    <section class="certificates" id="certificates">
+        <h2 class="section-title">My Certificates</h2>
+
+        <div class="certificate-card">
+
+            <img
+                src="certicate1.jpg.jpeg"
+                alt="Diploma in IT certificate from CADD Infotech"
+                class="certificate-img"
+            >
+
+            <h3>Diploma in IT</h3>
+
+            <p>CADD Infotech, Chromepet</p>
+            <p>C++ and Python</p>
+            <p>Completed: July 2026</p>
+
+            <a
+                href="certicate1.jpg.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+            >
+                View Certificate
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>Interested in connecting and learning together?</p>
+
+        <a class="btn" href="mailto:bpoovarasan30@gmail.com">
+            Email Me
         </a>
-    </div>
-</section>
 
-    
-<section class="contact" id="contact">
-    <h2 class="section-title">Contact Me</h2>
+        <a
+            class="btn"
+            href="https://github.com/Poovarasan2008"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
 
-    <p>Interested in connecting and learning together?</p>
+        <a
+            class="btn"
+            href="https://www.linkedin.com/in/poovarasan-b-8b8106429/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LinkedIn
+        </a>
+    </section>
 
-    <a class="btn" href="mailto:bpoovarasan30@gmail.com">
-        Email Me
-    </a>
-
-    <a class="btn"
-       href="https://github.com/Poovarasan2008"
-       target="_blank"
-       rel="noopener noreferrer">
-        GitHub
-    </a>
-
-    
-<a class="btn"
-   href="https://www.linkedin.com/in/poovarasan-b-8b8106429/"
-   target="_blank"
-   rel="noopener noreferrer">
-   LinkedIn
-</a>
-
-</section>
-
+    <!-- Footer -->
 
     <footer>
         <p>© 2026 Poovarasan | Built with HTML & CSS</p>
